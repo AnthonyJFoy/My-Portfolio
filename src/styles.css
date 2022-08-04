@@ -1,0 +1,292 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section {
+    background-color: white;
+}
+
+.me {
+    background-color: #1c1d25;
+    height: 100vh; /* makes the height 100% of the viewport height*/
+    color: white;
+    font-size: 40px;
+}
+
+.skills-section {
+    background-color: #1c1d25;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+#contact-me {
+    background-color: #1c1d25;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 50px;
+    color: white;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.me-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.me-text {
+    margin-left: 40px;
+    margin-bottom: 200px;
+}
+
+.button {
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #13c5c5;
+    color: #A9A9A9;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #18B7B7;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+.socialIcons {
+    padding-bottom: 200px;
+}
+
+.logo   {
+    height: 150px;
+    margin: 30px;
+}
+
+.social {
+    margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.second-sub-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 400px;
+    border-radius: 150px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px black;
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 375px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #093ddc;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    #nav-list {
+        display: none;
+        background-color: #2b2c38;
+    }
+
+    #nav-list.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #skills-list {
+        display: flex;
+    }
+}
+
+.form-submit {
+    width: 50%;
+}
+
+.form-submit form {
+    width: 100%;
+}
+
+.form-submit .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-control {
+    width: 50%;
+    border: none;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 20px;
+}
+
+.form-row .form-control:focus,
+.form-submit textarea:focus {
+    outline: 0;
+    background-color: #ddf5ed;
+}
+
+.form-submit textarea {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 95%;
+    border: none;
+    resize: none;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+form button {
+    width: 100%;
+    background-color: #13c5c5;
+    color: white;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+}
+
+form button:hover {
+    background-color: #18B7B7;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .form-submit {
+        width: 80%;
+    }
+
+    .form-submit .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row .form-control {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
