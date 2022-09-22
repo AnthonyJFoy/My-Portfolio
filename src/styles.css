@@ -32,12 +32,22 @@ nav {
     justify-content: space-between;
 }
 
-ul {
+#nav-list {
     display: flex;
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
+}
+
+.skills-section ul {
+    text-align: left;
+    font-size: 30px;
+}
+
+#skills-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 li {
@@ -56,6 +66,7 @@ h2 {
 h3 {
     font-size: 50px;
     color: white;
+    margin: 0;
 }
 
 p {
@@ -218,7 +229,8 @@ a {
     }
 
     #skills-list {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
