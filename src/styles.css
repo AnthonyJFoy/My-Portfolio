@@ -162,13 +162,6 @@ p {
     justify-content: space-around;
 }
 
-@media only screen and (min-width: 375px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 .project-image {
     margin-top: 25px;
     width: 250px;
@@ -230,9 +223,26 @@ a {
 
     #skills-list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 6fr);
+    }
+
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills-section ul {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .subtext {
+        font-size: 20px;
+        font-weight: 400;
     }
 }
+
+
 
 /*Form styling removed*/
 /*
